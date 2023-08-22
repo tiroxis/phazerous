@@ -1,0 +1,31 @@
+.unit-card{
+    float:left;
+    margin-left: 280px;
+    width:240px;
+    &.root-unit{
+      margin-left: 0;
+    }
+    .decorator{
+      position:relative;
+      left:0; top:32px; z-index: 1;
+      margin-left: -280px;
+      width:280px;
+      height: 1px;
+      background:#b1b4bc;
+      &:before,
+      &:after{
+        content:'';
+        position:absolute; top: -1.5px;
+        width:3px; height:3px; border-radius: 1.5px;
+        background:#b1b4bc;
+      }
+      &:before{
+        left:-1.5px;
+      }
+      &:after{
+        right:-1.5px;
+      }
+    }
+
+}
+
